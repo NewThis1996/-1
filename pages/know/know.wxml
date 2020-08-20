@@ -1,0 +1,73 @@
+<view>
+    <!-- `.json` 页面配置文件，设置与页面顶部显示内容的相关信息 -->
+    <!-- 如果想要预览当前页面,就需要把app.json中,当前页面移动到第一城项 -->
+    <!-- {
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/know/know"
+  ], -->
+  <!-- 上面就是移动的home页面到第一项   alt+上箭头-->
+  <!-- view 是视图容器,和div效果差不多 -->
+  <!-- text 相当于span  可以在一行展示 -->
+  <!-- image -->
+  <image src="/assets/img/bf_s.jpg" class="banner-pic"/>
+  <!-- <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image> -->
+  <!-- mode是裁剪模式 -->
+  <!-- src:/    /表示当前的根路劲(绝对路劲) -->
+  <!-- 自结束标签.有很多功能 -->
+<!-- 相对路径../../assets/img/... -->
+
+
+</view>
+
+<view class="red {{ isShowBlue?'blue':''}}{{}}">
+    <!-- 动态绑定class名称 -->
+    <!-- blue是个class属性名 -->
+    <!--  isShowBlue 是个data中的变量,true或者false -->
+    <!-- 也可以绑定多个指令 -->
+</view>
+
+<view wx:for="{{arrs}}">
+        {{item}}
+        <!-- 默认就代表数据当中的每一项 -->
+        {{index}}
+        <!-- 默认就是下标 -->
+
+        <!-- 如果是数据包着对象,多层嵌套的话 -->
+        <text wx:for="{{item.hobby}}" wx:for-index="idx" wx:for-item="itemname">
+        <!-- 指定索引名 ,指定属性值 -->
+        {{itemname}}
+        </text>
+        
+        
+</view>
+
+
+<view hidden="{{isshow}}">
+    <!-- hidden控制样式显示隐藏或者消失  ,true 为让其消失,false为显示 -->
+</view>
+  
+
+  <view wx:if="{{ishow}}">
+      <!-- 是通过销毁DOM来控制显示和隐藏的 -->
+  </view>
+    
+  <!-- 在调试器中  AppData 可以更改数据,进行控制 -->
+  
+  <view wx:else="{{isshow}}">
+      
+  </view>
+    <view wx:elif="{{isshow}}">
+        
+    </view>
+      
+<block wx:for="{{items}}">
+    <!-- 属于包装元素,不会渲染到页面当中 -->
+    <!-- 使用for循环的,这是一个保守标签 -->
+</block>
+
+
+<!-- 尺寸单位 time: 42:47 -->
+  

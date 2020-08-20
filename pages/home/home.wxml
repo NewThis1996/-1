@@ -1,0 +1,68 @@
+<view class="head">
+    <view><image src="/assets/img/logo.png" class="head-icon"/></view>
+    <view class="head-title">郑州高端互联网技术培训</view>
+    <view class="threeline">
+        <view class="lines"></view>
+        <view class="lines"></view>
+        <view class="lines"></view>
+    </view>
+</view>
+<!-- 微信小程序 轮播图地址:    https://blog.csdn.net/JY185445/article/details/89112169 -->
+<!-- 微信小程序开放文档     :https://developers.weixin.qq.com/miniprogram/dev/component/swiper.html -->
+<view>
+    <image src="/assets/img/bf_s.jpg" class="banner-pic"/>
+</view>
+
+<view class="about">
+    <view class="about-us">
+        关于我们
+    </view>
+    <view class="about-line">
+        
+    </view>
+      
+    <view class="about-course">
+        course
+    </view>
+      
+</view>
+
+<view class="aboutus-banner">
+    <image src="/assets/img/about_us.jpg" class="aboutus-pic"/>
+</view>
+
+<view class="bf-teacher" style="white-space:pre-wrap">
+不凡学院老师由一帮80后老北漂组成。我们分别来
+自于腾讯网，凤凰网，网易 等北京知名互联网公
+司，我们都曾奋斗在一线岗位，都曾面试新人，带
+新人，深知公司需要什么样的人才。我们会通过实
+战项目结合 培训的教学模式，把知名互联网公司的
+工作流程，设计方法，开发方式手把手的教给大
+家，在不凡学习就相当于工作，高薪就业你也行！
+</view>
+  
+
+  <view class="swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block>
+        
+          <swiper-item>
+            <view class="swiper-item {{item}}"><image src="/assets/img/evn_1.jpg"/></view>
+          </swiper-item>
+        </block>
+        <block>
+        
+          <swiper-item>
+            <view class="swiper-item {{item}}"><image src="/assets/img/evn_3.jpg"/> --></view>
+          </swiper-item>
+        </block>
+        <block>
+          <swiper-item>
+            <view class="swiper-item {{item}}"><image src="/assets/img/evn_4.jpg"/> --></view>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+    
+  
